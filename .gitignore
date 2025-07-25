@@ -1,0 +1,9 @@
+# .gitignore
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+reports/*
+docs/_build/
+*.log

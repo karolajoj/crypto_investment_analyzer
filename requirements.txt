@@ -1,0 +1,13 @@
+pandas==2.2.3
+python-binance==1.0.19
+matplotlib==3.9.2
+seaborn==0.13.2
+reportlab==4.2.2
+backtesting==0.3.3
+pytest==8.3.2
+unittest2==1.1.0
+flake8==7.1.1
+pylint==3.2.7
+black==24.8.0
+sphinx==8.0.2
+tqdm==4.66.5
