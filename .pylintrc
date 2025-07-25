@@ -1,3 +1,5 @@
 [MASTER]
-disable = C0114  # Missing module docstring
 max-line-length = 88
+
+[MESSAGES CONTROL]
+disable = C0114  # Missing module docstring
