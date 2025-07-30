@@ -1,0 +1,74 @@
+{
+  "version": "0.1.0",
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch Crypto Analyzer",
+      "program": "${workspaceFolder}/src/main.py",
+      "args": [
+        "--currency",
+        "${input:currency}",
+        "--timeframe",
+        "${input:timeframe}",
+        "--start-date",
+        "${input:startDate}",
+        "--end-date",
+        "${input:endDate}",
+        "--lookback",
+        "${input:lookback}",
+        "--percentiles",
+        "${input:percentiles}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Debug Pytest",
+      "module": "pytest",
+      "args": ["${workspaceFolder}/tests/test_data_fetcher.py", "--verbose"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "currency",
+      "description": "Enter cryptocurrency code (e.g., ETH, BTC)",
+      "default": "ETH"
+    },
+    {
+      "type": "promptString",
+      "id": "timeframe",
+      "description": "Enter timeframe (e.g., 1h, 1d)",
+      "default": "1d"
+    },
+    {
+      "type": "promptString",
+      "id": "startDate",
+      "description": "Enter start date (DD.MM.YYYY HH:MM:SS, Warsaw time)",
+      "default": "20.07.2025 00:00:00"
+    },
+    {
+      "type": "promptString",
+      "id": "endDate",
+      "description": "Enter end date (DD.MM.YYYY HH:MM:SS, Warsaw time)",
+      "default": "25.07.2025 23:59:59"
+    },
+    {
+      "type": "promptString",
+      "id": "lookback",
+      "description": "Enter lookback period (e.g., 30d, 12h, 60m, or empty)",
+      "default": ""
+    },
+    {
+      "type": "promptString",
+      "id": "percentiles",
+      "description": "Enter comma-separated percentiles (e.g., 25,50,75)",
+      "default": "25,50,75"
+    }
+  ]
+}
