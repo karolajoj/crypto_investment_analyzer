@@ -1,0 +1,23 @@
+# Data Handling
+pandas==2.2.3         # Data manipulation and analysis for historical price data
+python-binance==1.0.19 # API client for fetching cryptocurrency data from Binance
+
+# Visualization
+matplotlib==3.9.2      # Visualization of price trends and charts
+seaborn==0.13.2        # Statistical data visualization (e.g., heatmaps)
+reportlab==4.2.2       # PDF report generation for analysis results
+backtesting==0.3.3     # Backtesting framework for strategy optimization
+
+# Testing
+pytest==8.3.2          # Unit testing framework
+unittest2==1.1.0       # Extended unittest capabilities for testing
+pytest-xdist==3.8.0    # Parallel execution of pytest tests
+pytest-cov==6.2.1      # Coverage analysis for pytest tests
+
+# Code Quality
+yapf==0.43.0           # Alternative code formatter for Python
+pylint==3.2.7          # Static code analysis and linting
+sphinx==8.0.2          # Documentation generation from code comments
+
+# Utilities
+tqdm==4.66.5           # Progress bars for long-running tasks
